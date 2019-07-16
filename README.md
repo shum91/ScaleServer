@@ -1,12 +1,11 @@
-#SHTRIH
+# SHTRIH
 
 Author Shumilin Alexander (email a.shumilin@ucs.ru),  
 specially for http://tracker.ucs.ru/issues/175782
 
 ## SHTRIH-Com
 
-HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1
-
+HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:scalesCOMport:scalesCOMbaud" where
 
 - serverHTTPip   -> use empty (default 0.0.0.0) or ip
@@ -24,8 +23,7 @@ Example:
 
 ## SHTRIH-Ethernet
 
-HTTP<->UDP server for scales shtrih (not com, only network protocol) version 0.1
-
+HTTP<->UDP server for scales shtrih (not com, only network protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:serverUDPport:scalesUDPip:scalesUDPport" where
 
 - serverHTTPip   -> use ip
