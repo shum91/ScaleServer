@@ -26,13 +26,11 @@ Example:
 HTTP<->UDP server for scales shtrih (not com, only network protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:serverUDPport:scalesUDPip:scalesUDPport" where
 
-- serverHTTPip   -> use ip
-- serverHTTPport -> use free port 0-65535 (default 50505)
-- serverUDPport
-- scalesUDPip
-- scalesUDPport
-- scalesCOMport  -> use COM port scales
-- scalesCOMbaud  -> use speed COM port scales
+- serverHTTPip: use ip
+- serverHTTPport: use free port 0-65535 (default 50505)
+- serverUDPport: 
+- scalesUDPip: ip scales
+- scalesUDPport: port scales
 - (use default password 30)
 
 Example:
