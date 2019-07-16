@@ -12,8 +12,9 @@ connection string is "serverHTTPip:serverHTTPport:scalesCOMport:scalesCOMbaud" w
 - scalesCOMbaud  -> use speed COM port scales
 - (use default password 30)
 
-Example: SHTRIH-Com.exe ":50505:COM1:9600"
+Example:
 
+>SHTRIH-Com.exe ":50505:COM1:9600"
 - HTTP server listening on 0.0.0.0:50505
 - server listening and sending message on port COM1 speed 9600
 - URL http://127.0.0.1:50505/?cmd=getweight
@@ -33,7 +34,9 @@ connection string is "serverHTTPip:serverHTTPport:serverUDPport:scalesUDPip:scal
 - scalesCOMbaud  -> use speed COM port scales
 - (use default password 30)
 
-Example: node s.js "0.0.0.0:50505:2005:192.168.0.202:1111"
+Example:
+
+> node s.js "0.0.0.0:50505:2005:192.168.0.202:1111"
 - HTTP server listening on 0.0.0.0:50505
 - UDP server listening on 0.0.0.0:2005 and send message on 192.168.0.202:1111
 - URL http://127.0.0.1:50505/?cmd=getweight
