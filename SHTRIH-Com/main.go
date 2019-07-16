@@ -18,18 +18,19 @@ func main () {
     configString := "0.0.0.0:50505:COM1:9600"
 	if len(os.Args) > 1 {
         if os.Args[1] == "h" || os.Args[1] == "-h" || os.Args[1] == "help" || os.Args[1] == "-help" || os.Args[1] == "--help" {
-            fmt.Println("HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1")
-            fmt.Println("Author shumilin alexander (email a.shumilin@ucs.ru), specially for http://tracker.ucs.ru/issues/175782\n")
-            fmt.Println("config string  -> serverHTTPip:serverHTTPport:scalesCOMport:scalesCOMbaud")
-            fmt.Println("serverHTTPip   -> use empty (default 0.0.0.0) or ip")
-            fmt.Println("serverHTTPport -> use free port 0-65535 (default 50505)")
-            fmt.Println("scalesCOMport  -> use COM port scales")
-            fmt.Println("scalesCOMbaud  -> use speed COM port scales")
-            fmt.Println("(use default password 30)\n\nExample:")
-            fmt.Println(os.Args[0], "\":50505:COM1:9600\"")
-            fmt.Println("HTTP server listening on 0.0.0.0:50505")
-            fmt.Println("     server listening and sending message on port COM1 speed 9600")
-            fmt.Println("URL  http://127.0.0.1:50505/?cmd=getweight")
+            fmt.Println(`HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1
+Author shumilin alexander (email a.shumilin@ucs.ru), specially for http://tracker.ucs.ru/issues/175782
+config string  -> serverHTTPip:serverHTTPport:scalesCOMport:scalesCOMbaud
+serverHTTPip   -> use empty (default 0.0.0.0) or ip
+serverHTTPport -> use free port 0-65535 (default 50505)
+scalesCOMport  -> use COM port scales
+scalesCOMbaud  -> use speed COM port scales
+(use default password 30)
+
+Example:`, os.Args[0], `":50505:COM1:9600"
+HTTP server listening on 0.0.0.0:50505
+     server listening and sending message on port COM1 speed 9600
+URL  http://127.0.0.1:50505/?cmd=getweight`)
             os.Exit(0)
         } else {
             configString = os.Args[1]
