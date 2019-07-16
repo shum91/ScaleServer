@@ -8,10 +8,10 @@ specially for http://tracker.ucs.ru/issues/175782
 HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:scalesCOMport:scalesCOMbaud" where
 
-- serverHTTPip   -> use empty (default 0.0.0.0) or ip
-- serverHTTPport -> use free port 0-65535 (default 50505)
-- scalesCOMport  -> use COM port scales
-- scalesCOMbaud  -> use speed COM port scales
+- serverHTTPip > empty (default 0.0.0.0) or ip
+- serverHTTPport > free tcp port 0-65535 (default 50505)
+- scalesCOMport > COM port scales
+- scalesCOMbaud > speed COM port scales
 - (use default password 30)
 
 Example:
@@ -26,11 +26,11 @@ Example:
 HTTP<->UDP server for scales shtrih (not com, only network protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:serverUDPport:scalesUDPip:scalesUDPport" where
 
-- serverHTTPip: use ip
-- serverHTTPport: use free port 0-65535 (default 50505)
-- serverUDPport: 
-- scalesUDPip: ip scales
-- scalesUDPport: port scales
+- serverHTTPip > ip
+- serverHTTPport > free tcp port 0-65535 (default 50505)
+- serverUDPport > free udp port 0-65535
+- scalesUDPip > ip scales
+- scalesUDPport > port scales
 - (use default password 30)
 
 Example:
@@ -38,5 +38,5 @@ Example:
 > node s.js "0.0.0.0:50505:2005:192.168.0.202:1111"
 - HTTP server listening on 0.0.0.0:50505
 - UDP server listening on 0.0.0.0:2005 and send message on 192.168.0.202:1111
-- URL http://127.0.0.1:50505/?cmd=getweight
 - scales listening on 192.168.0.202:1111 and send message on udp server
+- URL http://127.0.0.1:50505/?cmd=getweight
