@@ -1,6 +1,9 @@
-Author Shumilin Alexander (email a.shumilin@ucs.ru), specially for http://tracker.ucs.ru/issues/175782<br />
+#SHTRIH
 
-# SHTRIH-Com
+Author Shumilin Alexander (email a.shumilin@ucs.ru),  
+specially for http://tracker.ucs.ru/issues/175782
+
+## SHTRIH-Com
 
 HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1
 
@@ -19,7 +22,7 @@ Example:
 - server listening and sending message on port COM1 speed 9600
 - URL http://127.0.0.1:50505/?cmd=getweight
 
-# SHTRIH-Ethernet
+## SHTRIH-Ethernet
 
 HTTP<->UDP server for scales shtrih (not com, only network protocol) version 0.1
 
