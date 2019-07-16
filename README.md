@@ -1,7 +1,6 @@
 # SHTRIH
 
-Author Shumilin Alexander (email a.shumilin@ucs.ru),  
-specially for http://tracker.ucs.ru/issues/175782
+Author Shumilin Alexander (email a.shumilin@ucs.ru), specially for http://tracker.ucs.ru/issues/175782
 
 ## SHTRIH-Com
 
