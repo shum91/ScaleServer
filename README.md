@@ -34,7 +34,7 @@ connection string is "serverHTTPip:serverHTTPport:serverUDPport:scalesUDPip:scal
 
 Example:
 
-> node s.js "0.0.0.0:50505:2005:192.168.0.202:1111"
+> node server.js "0.0.0.0:50505:2005:192.168.0.202:1111"
 - HTTP server listening on 0.0.0.0:50505
 - UDP server listening on 0.0.0.0:2005 and send message on 192.168.0.202:1111
 - scales listening on 192.168.0.202:1111 and send message on udp server
