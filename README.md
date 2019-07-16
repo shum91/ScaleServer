@@ -4,11 +4,11 @@ Author Shumilin Alexander (email a.shumilin@ucs.ru), specially for http://tracke
 
 ## SHTRIH-Com
 
-HTTP<->COM server for scales shtrih (not network, only com protocol) version 0.1  
+HTTP<->COM server for scales shtrih (com protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:scalesCOMport:scalesCOMbaud" where
 
 - serverHTTPip > empty (default 0.0.0.0) or ip
-- serverHTTPport > free tcp port 0-65535 (default 50505)
+- serverHTTPport > free TCP port 0-65535 (default 50505)
 - scalesCOMport > COM port scales
 - scalesCOMbaud > speed COM port scales
 - (use default password 30)
@@ -22,13 +22,13 @@ Example:
 
 ## SHTRIH-Ethernet
 
-HTTP<->UDP server for scales shtrih (not com, only network protocol) version 0.1  
+HTTP<->UDP server for scales shtrih (network protocol) version 0.1  
 connection string is "serverHTTPip:serverHTTPport:serverUDPport:scalesUDPip:scalesUDPport" where
 
-- serverHTTPip > ip
-- serverHTTPport > free tcp port 0-65535 (default 50505)
-- serverUDPport > free udp port 0-65535
-- scalesUDPip > ip scales
+- serverHTTPip > IP
+- serverHTTPport > free TCP port 0-65535 (default 50505)
+- serverUDPport > free UDP port 0-65535
+- scalesUDPip > IP scales
 - scalesUDPport > port scales
 - (use default password 30)
 
